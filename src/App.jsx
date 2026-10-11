@@ -21,7 +21,7 @@ function App() {
 
   <ul className="flex gap-4 items-center">
 
-  <li>Home</li>
+  <li className="text-purple-500 underline decoration-purple-500 ">Home</li>
   <li>NowShowing</li>
   <li>Series</li>
   <li>Popular</li>
@@ -32,9 +32,17 @@ function App() {
 
 </nav>
 
-<div className="">
-  <h1>Find <span>Movies</span> You'll Enjoy Without the Hassle</h1>
+<div className="text-center mt-5 leading-tight text-2xl ">
+  <h1>Find <span className="text-2xl font-semibold text-purple-500 ">Movies</span> You'll Enjoy Without the Hassle</h1>
 </div>
+
+
+<div className="text-2xl mt-4" >
+  <h1>Top Movie Streaming Options</h1>
+</div>
+
+
+
 
     </div>
   )
