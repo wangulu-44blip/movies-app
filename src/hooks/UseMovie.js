@@ -1,11 +1,10 @@
-
-
-function UseMovie() {
-  return (
-    <div>
-      
-    </div>
-  )
+export function useMovie() {
 }
 
-export default UseMovie
+async function fetchMovie(id) {
+
+}
+
+
+
+
