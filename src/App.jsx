@@ -4,6 +4,7 @@ import Home from './pages/home'
 import NowShowing from './pages/NowShowing'
 import Series from './pages/Series'
 import Popular from './pages/Popular'
+import MovieDetails from './pages/MovieDetails'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
  <Route path="now-showing" element={<NowShowing/>}/>
  <Route path="series" element={<Series/>}/>
  <Route path="popular" element={<Popular/>}/>
+ <Route path ="details/movie/:movie_id"element={<MovieDetails />}/>
  </Route>
 </Routes>
   </BrowserRouter>
