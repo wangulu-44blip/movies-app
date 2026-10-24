@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { useSeries } from "../hooks/useSeries";
 
 
@@ -19,13 +20,17 @@ function Series() {
         {/* Movies Grid */}
         <div className="grid grid-cols-2 mt-5 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-6">
           {series?.map((show) => (
-          <div key={show.id} className="overflow-hidden rounded-xl">
+         <Link
+              to={`/details/tv/${show.id}`}
+              key={show.id}
+              className="overflow-hidden rounded-xl"
+            >
               <img
                 src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
-                alt={show.name}
+                alt={show.title}
                 className="w-full aspect-2/3 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
